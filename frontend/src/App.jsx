@@ -24,7 +24,7 @@ useEffect(() => {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const response = await axios.post("http://localhost:3000/bfhl", parsedInput);
+      const response = await axios.post("https://bajaj-finser.onrender.com/bfhl", parsedInput);
       setResponseData(response.data);
     } catch (error) {
       alert("Invalid JSON format or server error");
